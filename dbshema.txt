@@ -1,0 +1,75 @@
+Authentication will be done with Firebase.
+
+UserModel
+    _id
+    _firebaseId
+    username
+    displayName
+    password
+    categoryId
+    homeAddress
+    homeAddressGeoLocation
+    workAddress
+    workAddressGeoLocation
+    balance
+    defaultCurrencyId
+    profilePicURL
+    rating
+    isAdmin
+    lastLoginToken
+    createdAt
+    updatedAt
+
+CurrencyModel
+    _id
+    code
+    name
+    createdAt
+    updatedAt
+
+CategoryModel
+    _id
+    name
+    description
+    createdAt
+    updatedAt
+
+PaymentMethodModel
+    _id
+    name
+    description
+    createdAt
+    updatedAt
+
+UserPaymentMethodModel
+    _id
+    paymentMethodId
+    userId
+    createdAt
+    updatedAt
+
+PaymentMethodFieldModel
+    _id
+    paymentMethodId
+    name
+    description
+    createdAt
+    updatedAt
+
+PaymentMethodFieldData
+    _id
+    userId
+    paymentMethodFieldId
+    value
+    createdAt
+    updatedAt
+
+user_history
+    uh_id
+    uh_initial_balance
+    uh_sender_user_id
+    uh_receiver_user_id
+    uh_sending_amount
+    uh_is_completed
+    uh_rating
+    uh_review
